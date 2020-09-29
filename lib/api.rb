@@ -3,7 +3,7 @@ require 'pry'
 class API
 
     def self.get_characters(name)
-        url="https://rickandmortyapi.com/api/character/#{name}"
+        url="https://rickandmortyapi.com/api/character/?#{name}"
         uri=URI(url)
         response=Net::HTTP.get(uri)
 

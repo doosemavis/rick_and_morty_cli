@@ -13,6 +13,7 @@ class Character
     end 
 
     def self.find_by_character(name)
+        self.all.select {|c| c.name == name}
     end 
-    
+
 end 
