@@ -5,6 +5,7 @@ class CLI
         puts "WUBBA-LUBBA DUB-DUB!" 
         puts ""
         puts "WELCOME TO THE MULTIVERSE OF RICK AND MORTY!"
+        puts ""
         puts "________________________________________________________________________________________________"
         puts ""
         puts ""
@@ -13,6 +14,9 @@ class CLI
         puts "OR"
         puts ""
         puts "Type 'exit' if you would like to return to your own universe"
+        puts ""
+        puts ""
+        puts ""
 
         @character = gets.strip.downcase
 

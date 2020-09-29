@@ -7,9 +7,10 @@ class API
         uri=URI(url)
         response=Net::HTTP.get(uri)
 
-        characters=JSON.parse(response)["results"][0]["name"].each do |c|
-            Character.new(name: c["name"]) if c["name"] != nil
+        characters=JSON.parse(response)["results"].each do |c|
+            Character.new(name: c["name"], species: c["species"], location: c["location"], episode: c["episode"]) if c["name"] != nil
         end 
+        binding.pry 
     end 
 
 end 
