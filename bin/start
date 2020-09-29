@@ -1,11 +1,12 @@
 #!/usr/bin/env ruby
 
 require 'pry'
-require 'HTTParty' 
+require 'httparty' 
 require 'json'
 
 require_relative '../lib/cli'
 require_relative '../lib/api'
 require_relative '../lib/character'
 
-CLI.new
+
+CLI.new.menu
