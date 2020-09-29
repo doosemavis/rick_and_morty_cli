@@ -7,7 +7,7 @@ class API
         uri=URI(url)
         response=Net::HTTP.get(uri)
 
-        characters = JSON.parse(response)
+        characters=JSON.parse(response)
         binding.pry
     end 
 

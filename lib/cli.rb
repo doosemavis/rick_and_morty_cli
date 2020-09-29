@@ -8,11 +8,11 @@ class CLI
         puts "________________________________________________________________________________________________"
         puts ""
         puts ""
-        puts "Enter the 'character' if you would like to see characters from the multiverse of Rick and Morty"
+        puts "Type 'character' if you would like to see characters from the multiverse of Rick and Morty"
         puts ""
         puts "OR"
         puts ""
-        puts "Enter 'exit' if you would like to return to your own universe"
+        puts "Type 'exit' if you would like to return to your own universe"
 
         @character = gets.strip.downcase
 
