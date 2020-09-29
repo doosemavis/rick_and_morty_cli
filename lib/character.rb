@@ -11,4 +11,8 @@ class Character
     def self.all
         @@all  
     end 
+
+    def self.find_by_character(name)
+    end 
+    
 end 
