@@ -13,4 +13,16 @@ class API
         binding.pry 
     end 
 
+    def self.get_locations(name)
+        url="https://rickandmortyapi.com/api/location/"
+        uri=URI(url)
+        response=Net::HTTP.get(uri)
+
+        locations=JSON.parse(response)["results"].each do |l|
+            Location.new(name: l["name"], type: l["type"], dimension: l["dimension"]) if l["name"] != nil
+        end 
+        binding.pry 
+    end 
+
+
 end 

@@ -9,7 +9,8 @@ class CLI
         puts "________________________________________________________________________________________________"
         puts ""
         puts ""
-        puts "Type 'character' if you would like to see characters from the multiverse of Rick and Morty"
+        puts "Type 'character' if you would like to see characters from Rick and Morty"
+        puts "Type 'location' if you want to see more multiverse locations"
         puts ""
         puts "OR"
         puts ""
@@ -19,9 +20,12 @@ class CLI
         puts ""
 
         @character = gets.strip.downcase
+        @location = gets.strip.downcase
 
         API.get_characters(@name)
+        API.get_locations(@name) 
 
     end 
+    
 
 end 

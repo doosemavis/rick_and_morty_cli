@@ -1,12 +1,11 @@
 class Character
-    attr_accessor :name
+    attr_accessor :name, :species, :gender
 
     @@all = []
 
-    def initialize(name: nil, species: nil, location: nil, gender: nil)
+    def initialize(name: nil, species: nil, gender: nil)
         @name = name
         @species = species
-        @location = location
         @gender = gender
         @@all << self
     end 
