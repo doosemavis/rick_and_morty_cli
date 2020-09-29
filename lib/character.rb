@@ -3,11 +3,11 @@ class Character
 
     @@all = []
 
-    def initialize(name: nil, species: nil, location: nil, episode: nil)
+    def initialize(name: nil, species: nil, location: nil, gender: nil)
         @name = name
         @species = species
         @location = location
-        @episode = episode
+        @gender = gender
         @@all << self
     end 
 
