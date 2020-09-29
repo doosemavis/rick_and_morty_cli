@@ -26,6 +26,6 @@ class CLI
         API.get_locations(@name) 
 
     end 
-    
+
 
 end 
