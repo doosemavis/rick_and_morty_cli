@@ -9,8 +9,8 @@ class CLI
         puts "________________________________________________________________________________________________"
         puts ""
         puts ""
-        puts "Type 'character' if you would like to see characters from Rick and Morty"
-        puts "Type 'location' if you want to see more multiverse locations"
+        puts "Type 'characters' if you would like to see characters from Rick and Morty"
+        puts "Type 'locations' if you want to see more multiverse locations"
         puts ""
         puts "OR"
         puts ""
@@ -24,6 +24,17 @@ class CLI
 
         API.get_characters(@name)
         API.get_locations(@name) 
+
+        characters = Character.all
+        characters.each.with_index(1) do |c, i|
+            puts "#{i}. #{c.name}"
+        end 
+
+        locations = Location.all
+        locations.each.with_index(1) do |l, i|
+            puts "#{i}. #{l.name}"
+        end 
+
 
     end 
 
