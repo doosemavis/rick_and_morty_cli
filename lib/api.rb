@@ -17,10 +17,11 @@ class API
         url="https://rickandmortyapi.com/api/character/"
         uri=URI(url)
         response=Net::HTTP.get(uri)
-        character_info = JSON.parse(response)["results"][0] 
-        character.info = character_info["name"]
-        character.info = character_info["species"]
-        character.info = character_info["gender"]
+        character_info = JSON.parse(response)["results"] 
+        character.name = character_info["name"]
+        character.species = character_info["species"]
+        character.gender = character_info["gender"]
+        character.status = character_info["status"]
     end 
 
     # def self.get_locations(name)
