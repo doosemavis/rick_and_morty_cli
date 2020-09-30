@@ -42,7 +42,7 @@ class CLI
 
     def prompt
         puts ""
-        puts "Type a number to see more info about a character"
+        puts "Type a character's name to see more info about them"
         puts ""
         puts "OR"
         puts ""
@@ -56,6 +56,17 @@ class CLI
         end 
         prompt
         input = gets.strip.downcase
+        character_selection(input)
+    end 
+
+    def character_selection(characters)
+        character = Character.find_by_character(characters)
+        character.each do |c|
+            puts " Name: #{c.name}"
+            puts " Gender: #{c.gender}"
+            puts " Species: #{c.species}"
+            puts " Status: #{c.status}"   
+        end 
     end 
 
 end 
