@@ -3,7 +3,7 @@ class Character
 
     @@all = []
 
-    def initialize(name: nil, species: nil, gender: nil)
+    def initialize(name:, species:, gender:)
         @name = name
         @species = species
         @gender = gender

@@ -10,7 +10,7 @@ class API
         characters=JSON.parse(response)["results"].each do |c|
             Character.new(name: c["name"], species: c["species"], gender: c["gender"]) if c["name"] != nil
         end 
-        # binding.pry 
+        binding.pry 
     end 
 
     def self.get_locations(name)
@@ -21,7 +21,7 @@ class API
         locations=JSON.parse(response)["results"].each do |l|
             Location.new(name: l["name"], type: l["type"], dimension: l["dimension"]) if l["name"] != nil
         end 
-        # binding.pry 
+        binding.pry 
     end 
 
 

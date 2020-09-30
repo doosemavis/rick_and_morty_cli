@@ -19,7 +19,7 @@ class CLI
         puts ""
         puts ""
 
-        menu_two 
+        # menu_two 
 
         @character = gets.strip.downcase
         API.get_characters(@name)
