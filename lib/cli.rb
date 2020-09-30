@@ -26,7 +26,9 @@ class CLI
         input = gets.strip.downcase 
         while input != 'exit' do
             if input == 'characters'
-
+                @character = gets.strip.downcase
+                API.get_characters(@name) if Character.find_by_character(@name).length == 0
+                print_characters
             elsif input.to_i > 0 && input.to_i <= Character.find_by_character(@name).count
                 characters = Character.find_by_character(@name)[input.to_i-1]
                 API.get_character(character) if !character.name
@@ -66,7 +68,5 @@ class CLI
     #         puts "#{i}. #{l.name}"
     #     end 
     # end 
-
-
 
 end 
