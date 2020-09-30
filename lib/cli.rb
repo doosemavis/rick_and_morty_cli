@@ -10,7 +10,7 @@ class CLI
         puts ""
         puts ""
         puts "Type 'characters' if you would like to see characters from Rick and Morty"
-        puts "Type 'locations' if you want to see more multiverse locations"
+        # puts "Type 'locations' if you want to see more multiverse locations"
         puts ""
         puts "OR"
         puts ""
