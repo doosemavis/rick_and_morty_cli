@@ -1,6 +1,6 @@
 class CLI
 
-    def menu
+    def menu_one
         puts ""
         puts "WUBBA-LUBBA DUB-DUB!" 
         puts ""
@@ -20,23 +20,24 @@ class CLI
         puts ""
 
         @character = gets.strip.downcase
-        @location = gets.strip.downcase
-
         API.get_characters(@name)
-        API.get_locations(@name) 
-
+      
         characters = Character.all
         characters.each.with_index(1) do |c, i|
             puts "#{i}. #{c.name}"
         end 
+    end 
+
+    def menu_two
+        @location = gets.strip.downcase
+        API.get_locations(@name) 
 
         locations = Location.all
         locations.each.with_index(1) do |l, i|
             puts "#{i}. #{l.name}"
         end 
-
-
     end 
+
 
 
 end 

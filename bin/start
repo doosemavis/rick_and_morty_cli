@@ -10,4 +10,4 @@ require_relative '../lib/character'
 require_relative '../lib/location'
 
 
-CLI.new.menu
+CLI.new.menu_one
