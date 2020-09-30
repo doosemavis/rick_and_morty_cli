@@ -1,5 +1,5 @@
 class Character
-    attr_accessor :name, :species, :gender, :status, :names
+    attr_accessor :name, :species, :gender, :status
 
     @@all = []
 
@@ -8,7 +8,6 @@ class Character
         @species = species
         @gender = gender
         @status = status
-        @names = []
         @@all << self
     end 
 
@@ -16,8 +15,8 @@ class Character
         @@all  
     end 
 
-    def self.find_by_character(name)
-        self.all.select {|c| c.name == name}
+    def self.find_by_index(index)
+        self.all.select {|c| c.name == index}
     end 
 
 end 

@@ -1,6 +1,9 @@
 class CLI
 
-    def menu_one
+    def call
+
+        API.get_characters
+
         puts ""
         puts "WUBBA-LUBBA DUB-DUB!" 
         puts ""
@@ -10,7 +13,6 @@ class CLI
         puts ""
         puts ""
         puts "Type 'characters' if you would like to see characters from Rick and Morty"
-        # puts "Type 'locations' if you want to see more multiverse locations"
         puts ""
         puts "OR"
         puts ""
@@ -19,26 +21,24 @@ class CLI
         puts ""
         puts ""
 
-        @character = gets.strip.downcase
-        API.get_characters(@name)
-        print_characters
-        prompt
-        input = gets.strip.downcase 
-        while input != 'exit' do
-            if input == 'characters'
-                @character = gets.strip.downcase
-                API.get_characters(@name) if Character.find_by_character(@name).length == 0
-                print_characters
-            elsif input.to_i > 0 && input.to_i <= Character.find_by_character(@name).count
-                characters = Character.find_by_character(@name)[input.to_i-1]
-                API.get_character(character) if !character.name
-            else 
-                puts "Incorrect answer: enter another option" 
-                print_character(character)
-            end 
-            input = gets.strip.downcase
-        end
+        menu_one
+
+    end
+
+
+    def menu_one
+        input = gets.strip.downcase
+        if input == 'characters'
+            print_characters
+            menu_one
+        elsif input == 'exit'
+            puts "See ya, sucka!"
+        else 
+            puts "What? I can't undersatand you, try another response"
+            menu_one
+        end 
     end 
+
 
     def prompt
         puts ""
@@ -47,25 +47,15 @@ class CLI
         puts "OR"
         puts ""
         puts "Type 'exit' to exit to your own lame universe"
-
-        def print_characters
-            Character.find_by_character(@name).each.with_index(1) do |c, i|
-                puts "#{i}. #{c.name}"
-            end 
-        end 
-
-        def print_character(character)
-        end 
     end 
 
 
-    # def menu_two
-    #     @location = gets.strip.downcase
-    #     API.get_locations(@name) 
+    def print_characters
+        Character.all.each.with_index(1) do |c, i|
+            puts "#{i}. #{c.name}"
+        end 
+        prompt
+        input = gets.strip.downcase
+    end 
 
-    #     locations = Location.all
-    #     locations.each.with_index(1) do |l, i|
-    #         puts "#{i}. #{l.name}"
-    #     end 
-    # end 
 end 

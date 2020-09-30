@@ -2,5 +2,5 @@
 
 require_relative '../config/environment.rb'
 
-CLI.new.menu_one
+CLI.new.call
  
