@@ -19,27 +19,29 @@ class CLI
         puts ""
         puts ""
 
-        # menu_two 
 
         @character = gets.strip.downcase
         API.get_characters(@name)
-      
-        characters = Character.all
-        characters.each.with_index(1) do |c, i|
-            puts "#{i}. #{c.name}"
-        end 
+        print_characters
 
     end 
 
-    def menu_two
-        @location = gets.strip.downcase
-        API.get_locations(@name) 
-
-        locations = Location.all
-        locations.each.with_index(1) do |l, i|
-            puts "#{i}. #{l.name}"
+        def print_characters
+            Character.all.each.with_index(1) do |c, i|
+                puts "#{i}. #{c.name}"
+            end 
         end 
-    end 
+
+
+    # def menu_two
+    #     @location = gets.strip.downcase
+    #     API.get_locations(@name) 
+
+    #     locations = Location.all
+    #     locations.each.with_index(1) do |l, i|
+    #         puts "#{i}. #{l.name}"
+    #     end 
+    # end 
 
 
 
