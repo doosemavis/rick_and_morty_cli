@@ -1,5 +1,5 @@
 class Character
-    attr_accessor :name, :species, :gender, :status
+    attr_accessor :name, :species, :gender, :status, :names
 
     @@all = []
 
@@ -8,6 +8,7 @@ class Character
         @species = species
         @gender = gender
         @status = status
+        @names = []
         @@all << self
     end 
 

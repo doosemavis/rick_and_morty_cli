@@ -19,17 +19,41 @@ class CLI
         puts ""
         puts ""
 
-
         @character = gets.strip.downcase
         API.get_characters(@name)
         print_characters
+        prompt
+        input = gets.strip.downcase 
+        while input != 'exit' do
+            if input == 'characters'
 
+            elsif input.to_i > 0 && input.to_i <= Character.find_by_character(@name).count
+                characters = Character.find_by_character(@name)[input.to_i-1]
+                API.get_character(character) if !character.name
+            else 
+                puts "Incorrect answer: enter another option" 
+                print_character(character)
+            end 
+            input = gets.strip.downcase
+        end
     end 
 
+    def prompt
+        puts ""
+        puts "Type a number to see more info about a character"
+        puts ""
+        puts "OR"
+        puts ""
+        puts "Type 'exit' to exit to your own lame universe"
+
         def print_characters
-            Character.all.each.with_index(1) do |c, i|
+            Character.find_by_character(@name).each.with_index(1) do |c, i|
                 puts "#{i}. #{c.name}"
             end 
+        end 
+
+        def print_character(character)
+
         end 
 
 
