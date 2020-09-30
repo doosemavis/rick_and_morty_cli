@@ -6,7 +6,7 @@ class CLI
         puts ""
         puts "WELCOME TO THE MULTIVERSE OF RICK AND MORTY!"
         puts ""
-        puts "________________________________________________________________________________________________"
+        puts "________________________________________________________________________"
         puts ""
         puts ""
         puts "Type 'characters' if you would like to see characters from Rick and Morty"
@@ -14,10 +14,12 @@ class CLI
         puts ""
         puts "OR"
         puts ""
-        puts "Type 'exit' if you would like to return to your own universe"
+        puts "Type 'exit' if you would like to return to your own lame universe"
         puts ""
         puts ""
         puts ""
+
+        menu_two 
 
         @character = gets.strip.downcase
         API.get_characters(@name)
@@ -26,6 +28,7 @@ class CLI
         characters.each.with_index(1) do |c, i|
             puts "#{i}. #{c.name}"
         end 
+
     end 
 
     def menu_two
