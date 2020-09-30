@@ -47,6 +47,8 @@ class CLI
         puts "OR"
         puts ""
         puts "Type 'exit' to exit to your own lame universe"
+        puts ""
+        puts ""
     end 
 
 
@@ -58,6 +60,7 @@ class CLI
         input = gets.strip.downcase
         character_selection(input)
     end 
+
 
     def character_selection(characters)
         character = Character.find_by_character(characters)
