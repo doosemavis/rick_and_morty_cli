@@ -8,7 +8,7 @@ class API
         response=Net::HTTP.get(uri)
 
         characters=JSON.parse(response)["results"].each do |c|
-            Character.new(name: c["name"], species: c["species"], gender: c["gender"]) if c["name"] != nil
+            Character.new(name: c["name"], species: c["species"], gender: c["gender"], status: c["status"]) if c["name"] != nil
         end 
         # binding.pry 
     end 

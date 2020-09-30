@@ -55,8 +55,8 @@ class CLI
         end 
 
         def print_character(character)
-
         end 
+    end 
 
 
     # def menu_two
@@ -68,5 +68,4 @@ class CLI
     #         puts "#{i}. #{l.name}"
     #     end 
     # end 
-
 end 
