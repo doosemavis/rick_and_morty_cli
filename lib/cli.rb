@@ -22,7 +22,6 @@ class CLI
         puts ""
 
         menu_one
-
     end
 
 
@@ -32,9 +31,9 @@ class CLI
             print_characters
             menu_one
         elsif input == 'exit'
-            puts "See ya, sucka!"
+            puts "See ya, sucka!!"
         else 
-            puts "What? I can't undersatand you, try another response"
+            puts "~~~ What??? I don't undersatand, try another response ~~~"
             menu_one
         end 
     end 
@@ -46,7 +45,7 @@ class CLI
         puts ""
         puts "OR"
         puts ""
-        puts "Type 'exit' to exit to your own lame universe"
+        puts "Type 'exit' to go back to your own lame universe"
         puts ""
         puts ""
     end 
@@ -68,7 +67,11 @@ class CLI
             puts " Name: #{c.name}"
             puts " Gender: #{c.gender}"
             puts " Species: #{c.species}"
-            puts " Status: #{c.status}"   
+            puts " Status: #{c.status}"
+            puts ""
+            puts "Wanna see more info about another character?"
+            puts ""
+            puts "If you do, type 'go back' to go back to the list, if not, type 'exit'"
         end 
     end 
 
