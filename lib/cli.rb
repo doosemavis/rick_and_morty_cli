@@ -70,8 +70,8 @@ class CLI
     end 
 
 
-    def character_selection(characters)
-        character = Character.find_by_character(characters)
+    def character_selection(character_name)
+        character = Character.find_by_character(character_name)
         character.each do |c|
             puts ""
             puts " Name: #{c.name}"
