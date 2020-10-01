@@ -28,3 +28,13 @@ This will kick off the CLI, and from there, you will read the instructions provi
 
 You can find the ruby code for this specific CLI at the following URL provided below 
 URL: https://github.com/doosemavis/rick_and_morty_cli
+
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/doosemavis/rick_and_morty_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+
+## License
+
+The project is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
