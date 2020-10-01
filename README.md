@@ -1,4 +1,5 @@
-# WELCOME TO THE RICK AND MORTY COMMAND LINE INTERFACE (CLI) 
+# RICK AND MORTY COMMAND LINE INTERFACE (CLI) 
+## WELCOME! 
 
 From this CLI you'll be able to interact with the terminal in order to discover more information about characters portrayed in the hit television show "Rick and Morty".
 
@@ -14,7 +15,7 @@ gem install httparty
 
 ## How to start:
 
-To begin the CLI, run this program by typing the follwing into your terminal, and then pressing 'enter'
+To start the CLI, enter the follwing code into your terminal, and then press 'enter'
 
 ```ruby
 ruby bin/start
