@@ -4,6 +4,69 @@ class CLI
 
         API.get_characters
 
+        puts "
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy-sNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd``-smMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm.   .+dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-     `+dMMMMMMMMMMMMMMMMMMMMMMMMMMy-sMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM/       .+dMMMMMMMMMMMMMMMMMMMMMMNo` /MMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo         `+mMMMMMMMMMMMMMMMMMMNh:`  -NMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy           .sNMMMMMMMMMMMMMMNd/`    `dMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd`            :hMMMMMMMMMMMNh/`       dMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd`             `/mMMMMMMMNy:`        `dMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd`               -dMMMNdo-`          `mMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh`                .ymy/`             -NMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs                   .                sMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMmmNNMMMMMMMMMMMMMMMMM+                                   -NMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMN+.---:/+oosyhhhhhddhy.               `````               sMMMMMMMMMMMMNNmNMMMMM
+        MMMMMMMMMMMN/             `````         ``.-:://///////+:-.`        +ddhhhhyyo+//:-/mMMMMM
+        MMMMMMMMMMMMm:                      `.:/+/:-.```      ``.-://:.      ``           :mMMMMMM
+        MMMMMMMMMMMMMm:                   ./+/-`                    .:+/.               `/NMMMMMMM
+        MMMMMMMMMMMMMMm:               `-+/-`                          .//.            `oNMMMMMMMM
+        MMMMMMMMMMMMMMMm-             .o/.                               -o-          .hMMMMMMMMMM
+        MMMMMMMMMMMMMMMMd.          `/o.                                  `o-        -dMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMd.        `++`                                    `s-     `+mMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMh.       /+`                                      .s`   `yMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMNo      .y`              ``````````````````````````++   `oNMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMNmh+:.      o:        `:+++++//////+////////::::::::///+y+.   -yNNMMMMMMMMMM
+        MMMMMMMMMMMNh+-          `y`       :s-````````````..``...-------------/h-     .+hNMMMMMMMM
+        MMMMMMNNho:`             :s        ./++++/////////yy/:///::::::::::/::+y-        ./ohmMMMM
+        MMMmho:`                 +:      -.                ++ `+/              .s-         .:yMMMM
+        MMMs/.`                  y-     `s`                 s:-s                `y`     `:hNMMMMMM
+        MMMMMNmy+-`              y.     :h/::::++/:::::::///yo+h////oys/::://////m-   .omMMMMMMMMM
+        MMMMMMMMMMmh+-`         `y`     //    `mN-          .s:+    /Ny          s. `oNMMMMMMMMMMM
+        MMMMMMMMMMMMMMmy+.      `y`     .s`    `.           +:`o`    `          -o .dMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMNs`     y`      -o.              `/+  .o-            `:o` :NMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMNh:`      y.       .+/.          .:+:    `+o-.`     `-/+d:   /mMMMMMMMMMMMM
+        MMMMMMMMMMMMMmo-         y-         .:/:/::::::::`       :o.://:://:.`-d-    .yNMMMMMMMMMM
+        MMMMMMMMMMNy/`           o:     `/-      ```        `    `y.  `    `-+oh.     `-yNMMMMMMMM
+        MMMMMMMNy/.            ./ys/.    `:///-...-:-       -o    // `/+////-``ho/-     `.oNMMMMMM
+        MMMMMMs.`             /+.``        ``.-----.`        +/   -o          `y`.+/ `-/oydNMMMMMM
+        MMMMMMNho/-`         /o                              `+/  /+          -s  `ydmNMMMMMMMMMMM
+        MMMMMMMMMMNmdy+:.`   o:                               `//:o`          /+  .mMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMNm/  :o`                                ```           +/./dMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMd.   -o/-``                                          os:-sNMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMm-     `.:/so.                  ```..------.``      `+h.  `/dMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMm-          :s`     `/`     .-://///::h/:::://y+:/-.` .y-+sssyNMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMmsyysyyyyyyo`o/     :o  `-//:-.``    :o      .s``..-/. o:sMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMs``s-    /+  /:.`         :o    `-o-      `.y-.mMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMd.  .s.   `o:..``          `+: -+//.    `-:oddssdMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMN:``..:h:   `--:/:       `.` :o.s`.yo`   `-sMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMNddmmNNMN+`             `s+s .o+- `-.    `+NMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh:`            ::.  `        `:hNMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh+.`                    `./hNMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmho-.             `.-+hmMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh-://:::-----:oydmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs    `.-:::---mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNmdhyo++y/`         `-my/+sydmmNNMMMMMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMNNmmdhs+/:.`   `  /y//:.....-:+/-s .`  `.-:+ymNMMMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMNy:-.`          ./  `y `-:://::-`  y.-/        `:sNMMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMN/              `o`   y`            /+ /:          /NMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMh`              o.    ++            .y  +-         `oMMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMN/``````````````:+`````-y`````````````y-`.o.`````````.dMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMNmmmmmmmmmmmmmmmNmmmmmmmNmmmmmmmmmmmmmNmmmmmmmmmmmmmmmNMMMMMMMMMMMMMMMMM
+        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
         puts ""
         puts "WUBBA-LUBBA DUB-DUB!" 
         puts ""
@@ -33,7 +96,7 @@ class CLI
         elsif input == 'exit'
             puts "See ya, sucka!!"
         else 
-            puts "~~~ What??? I don't undersatand, try another response ~~~"
+            puts "What??? I don't undersatand, try another response"
             menu_one
         end 
     end 
@@ -48,6 +111,13 @@ class CLI
         puts "Type 'exit' to go back to your own lame universe"
         puts ""
         puts ""
+    end 
+
+    def prompt_two
+        puts ""
+        puts "Wanna see more info about another character?"
+        puts ""
+        puts "If you do, type 'go back' to go back to the list, if not, type 'exit'"
     end 
 
 
@@ -69,10 +139,16 @@ class CLI
             puts " Species: #{c.species}"
             puts " Status: #{c.status}"
             puts ""
-            puts "Wanna see more info about another character?"
-            puts ""
-            puts "If you do, type 'go back' to go back to the list, if not, type 'exit'"
+            prompt_two
         end 
+
+        # if input == 'go back'
+        #     print_characters
+        # elsif input == 'exit'
+        #     puts "See ya, sucka!!"
+        # else 
+        #     puts "What??? I don't undersatand, try another response"
+        # end 
     end 
 
 end 
