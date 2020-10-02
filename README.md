@@ -6,7 +6,8 @@ From this CLI you'll be able to interact with the terminal in order to discover 
 Have fun!
 
 ## Gems to Install prior to execution 
-Copy and paste the following code into your terminal, then press 'enter' to install
+Copy and paste the following code into your terminal, then press 'enter' to install 
+** Be sure to install one gem at a time, first 'json', then 'httparty' **
 ```ruby
 gem install json
 
