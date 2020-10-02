@@ -10,7 +10,7 @@ Copy and paste the following code into your terminal, then press 'enter' to inst
 ** Be sure to install one gem at a time, first 'json', then 'httparty' **
 ```ruby
 gem install json
-
+  
 gem install httparty
 ```
 
