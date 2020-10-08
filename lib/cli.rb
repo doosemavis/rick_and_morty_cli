@@ -32,8 +32,8 @@ class CLI
                 print_characters 
             elsif input == 'go back'
                 print_characters
-            else 
-                puts "What??? I don't undersatand, type 'go back' to go back"  
+            else
+                puts "What??? I don't undersatand, type another response"  
             end 
              input = gets.strip.downcase
         end 
